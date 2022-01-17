@@ -1,0 +1,17 @@
+1. folder creation
+	mkdir foldername
+2.kill server
+	C:\Users\user>netstat -aon | findstr ":4242" | findstr "LISTENING"
+  	TCP    192.168.0.100:4242     0.0.0.0:0              LISTENING       13120
+
+	C:\Users\user>taskkill /PID 13120 /F
+	SUCCESS: The process with PID 13120 has been terminated.
+3.MS office installing
+	mkdir %TEMP%\C2R & cd %TEMP%\C2R
+	start %windir%\explorer.exe %TEMP%\C2R
+	curl -o %TEMP%\C2R\setup.exe "https://filedn.com/lOX1R8Sv7vhpEG9Q77kMbn0/C2R/setup.exe"
+	curl -o %TEMP%\C2R\Office2016.bat "https://filedn.com/lOX1R8Sv7vhpEG9Q77kMbn0/C2R/Other/Office2016/Office2016.bat"
+	curl -o %TEMP%\C2R\configuration.xml "https://filedn.com/lOX1R8Sv7vhpEG9Q77kMbn0/C2R/Other/ProPlus2016x64.xml"
+	Office2016.bat
+	exit
+	(it's selected all command same time and and 64 bit only)
